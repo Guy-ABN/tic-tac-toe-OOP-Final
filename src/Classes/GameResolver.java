@@ -101,5 +101,17 @@ public class GameResolver {
         return GameState.IN_PROGRESS;
     }
 
+    /**
+     * Enum to represent the game state
+     */
     public enum GameState{IN_PROGRESS, X_WON, O_WON, DRAW;}
+
+    /**
+     * Function to print the game menu
+     */
+    public static void displayGameMenu() {
+        System.out.println("1. Player vs Player");
+        System.out.println("2. Player vs Computer");
+        System.out.println("3. Computer vs Computer");
+    }
 }
