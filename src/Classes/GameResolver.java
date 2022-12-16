@@ -1,6 +1,14 @@
 package Classes;
 
 public class GameResolver {
+    /**
+     * Function to check if there are three similar pieces on the same line
+     * 
+     * @param board
+     * @param row
+     * @param col
+     * @return boolean
+     */
     public static boolean areThreePiecesInLine(int[][] board, int row, int col) {
         int gamePiece = board[row][col];
 
@@ -69,6 +77,12 @@ public class GameResolver {
         return false;
     }
 
+    /**
+     * Function to resolve the game
+     * 
+     * @param board
+     * @return GameState
+     */
     public static GameState resolve(int[][] board) {
         // for every cell in the board
         // check if 3 consecutive cells are in line
